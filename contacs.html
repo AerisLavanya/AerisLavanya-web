@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak Aeris</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: linear-gradient(to bottom, #d0f0ff, #a6ddf0);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 40px 20px;
+      }
+
+      .contact-card {
+        background-color: #ffffff;
+        border-radius: 30px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        max-width: 500px;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .contact-card::before {
+        content: "☁️";
+        font-size: 60px;
+        position: absolute;
+        top: -20px;
+        left: -10px;
+      }
+
+      .contact-card::after {
+        content: "💌";
+        font-size: 50px;
+        position: absolute;
+        bottom: -10px;
+        right: 20px;
+      }
+
+      h1 {
+        color: #4a90e2;
+        margin-bottom: 20px;
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 16px;
+        margin-bottom: 30px;
+        color: #555;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 12px 15px;
+        margin-bottom: 20px;
+        border: 2px solid #cce8f9;
+        border-radius: 15px;
+        font-size: 16px;
+        outline: none;
+        background: #f8fcff;
+        transition: 0.3s;
+      }
+
+      input:focus,
+      textarea:focus {
+        border-color: #7dc4ea;
+        background: #ffffff;
+      }
+
+      button {
+        background-color: #6ac7f8;
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 25px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #4daeea;
+      }
+
+      .social-icons {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        font-size: 28px;
+      }
+
+      .social-icons a {
+        color: #4a90e2;
+        transition: color 0.3s;
+      }
+
+      .social-icons a:hover {
+        color: #1a5ea6;
+      }
+
+      @media (max-width: 500px) {
+        .contact-card {
+          padding: 30px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contact-card">
+      <h1>Hubungi Aku! 💙</h1>
+      <p>Ada ide seru? Kirim aja pesan ke aku yaa! 🌈</p>
+
+      <form
+        id="komentarForm"
+        action="https://formspree.io/f/xyzjdonv"
+        method="POST"
+      >
+        <input type="text" name="nama" placeholder="Nama kamu..." required />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email aktif..."
+          required
+        />
+        <textarea
+          name="pesan"
+          rows="5"
+          placeholder="Tulis pesanmu di sini..."
+          required
+        ></textarea>
+        <button type="submit">Kirim Komentar ✨</button>
+      </form>
+
+      <div class="social-icons">
+        <a href="https://www.instagram.com/lavanya_aeris/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.tiktok.com/@aeris.lavanya1" target="_blank"
+          ><i class="fab fa-tiktok"></i
+        ></a>
+        <a href="https://www.youtube.com/@aerislavanya" target="_blank"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a href="https://discord.gg/GMbCCyzwzA" target="_blank"
+          ><i class="fab fa-discord"></i
+        ></a>
+      </div>
+    </div>
+  </body>
+</html>
